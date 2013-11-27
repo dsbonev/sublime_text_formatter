@@ -1,0 +1,18 @@
+h1. SublimeTextFormatter
+
+Format backtrace as sublime links in the form subl://open=file:///path/to/file:42
+
+h2. Installation
+
+Put 'sublime_text_formatter' it in your @Gemfile@ and run your specs like this from now on:
+
+bc. $ rspec --format SublimeTextFormatter
+
+If you want to use SublimeTextFormatter as your default formatter, simply put the options in your @.rspec@ file:
+
+bc. --format SublimeTextFormatter
+--color
+
+h2. Contributing
+
+Found an issue? Have a great idea? Want to help? Great! Create an issue "issue":http://github.com/elitau/sublime_text_formatter/issues for it, or even better; fork the project and fix the problem yourself. Pull requests are always welcome. :)
