@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "sublime_text_formatter"
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Eduard Litau"]
   s.email       = ["eduard.litau+sublime_text_formatter@gmail.com"]

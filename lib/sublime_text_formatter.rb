@@ -8,7 +8,16 @@ class SublimeTextFormatter < RSpec::Core::Formatters::BaseTextFormatter
   end
 
   def sublime(backtrace_info)
-    app_path = File.join(File.dirname(__FILE__))
-    "subl://open?url=file://" + backtrace_info.sub("./spec", app_path)
+    file_path = extract_path_from_backtrace(backtrace_info)
+    path = if file_path.starts_with?('/')
+      file_path
+    else
+      File.join(File.expand_path(ENV['SUBLIME_PROJECT_DIR']), file_path)
+    end
+    "subl://open?url=file://" + path
+  end
+
+  def extract_path_from_backtrace(backtrace_info)
+    backtrace_info[/.*\:\d+/]
   end
 end
