@@ -5,12 +5,11 @@ Gem::Specification.new do |s|
   s.version     = '0.0.1'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Eduard Litau"]
-  s.email       = ["eduard.litau@gmail.com"]
+  s.email       = ["eduard.litau+sublime_text_formatter@gmail.com"]
   s.homepage    = "https://github.com/elitau/sublime_text_formatter"
-  s.summary     = %q{the SublimeText links RSpec formatter}
-  s.description = %q{the SublimeText links RSpec formatter}
-
-  s.rubyforge_project = "sublime_text_formatter"
+  s.summary     = %q{SublimeText links RSpec formatter}
+  s.description = %q{RSpec results formats file paths as links that can be opened by Sublime Text}
+  s.license     = "MIT"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
